@@ -33,7 +33,7 @@ public:
 	}
 
 	void push(int val) {
-		if(full()) {
+		if(full()){
 			throw Exception("Stack is full");
 		}
 		data_[top_++] = val;
@@ -55,6 +55,8 @@ int main() {
 			st.push(i * 10);
 			cout << i * 10 << endl;
 		}
+
+	} catch (Gosho e) {
 
 	} catch (Exception e) {
 		cout << e.get_message() << endl;

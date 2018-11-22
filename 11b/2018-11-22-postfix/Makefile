@@ -1,6 +1,6 @@
 all: postfix
 
-calculator.o: calculator.hh calculator.cc
+calculator.o: operation.hh calculator.hh calculator.cc
 
 postfix.o: postfix.cc calculator.hh
 

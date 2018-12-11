@@ -1,6 +1,7 @@
 #include "unary.hh"
 
-double UnaryOperation::execute(){
+void UnaryOperation::execute(){
 	double value = get_calc().pop();
-	return eval(value);
+	double res = eval(value);
+	get_calc().push(res);
 }

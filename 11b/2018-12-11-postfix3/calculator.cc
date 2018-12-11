@@ -42,9 +42,9 @@ void Calculator::run(istream& in, ostream& out) {
 			push(value);
 		} else {
 			Operation* op = get_operation(token);
-			double result = op -> execute();
+			op -> execute();
+			double result = values_.back();
 			out << result << endl;
-			push(result);
 		}
 		
 	}

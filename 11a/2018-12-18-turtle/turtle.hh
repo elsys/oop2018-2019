@@ -54,16 +54,16 @@ public:
 
 	Turtle(double width, double height)
 	: width_(width), height_(height),
-	pos_(width_/2.0, height_/2.0),
-	heading_(0),
-	is_pendown_(false)
+		pos_(width_/2.0, height_/2.0),
+		heading_(0),
+		is_pendown_(false)
 	{}
 	
 	virtual ~Turtle() {
 	
 	}
 	
-	virtual void setup() {
+	virtual Turtle& setup() {
 	
 	}
 	
@@ -106,10 +106,13 @@ public:
 		return *this;
 	}
 	
+	virtual Turtle& pensize(double width) = 0;
+	
 	Turtle& right(double angle) {
 		heading_ -= angle;
 		return *this;
 	}
+	
 	
 	Turtle& left(double angle) {
 		heading_ += angle;
@@ -122,9 +125,28 @@ public:
 	}
 	
 	Turtle& forward(double distance) {
-
+		Point movement = Point::polar(heading_, distance);
+		Point next_pos = get_pos() + movement;
+		return moveto(next_pos);
 	}
 	
+};
+
+class PSTurtle: public Turtle {
+	std::ostream& out_;
+
+public:
+	PSTurtle(double width, double height, std::ostream& out=std::cout) : Turtle(width, height), out_(out)
+	{}
+
+	~PSTurtle();
+
+	Turtle& setup();
+	Turtle& moveto(const Point& pos);
+	Turtle& pencolor(const Color& c);
+	Turtle& pensize(double width);
+
+	Turtle& dot(double size=1.0);
 };
 
 

@@ -3,3 +3,4 @@ draw
 *.o
 postfix
 turtle
+*.class

@@ -9,6 +9,7 @@ public class Sqrt extends BaseOperation implements Operation {
     @Override
     public void execute() {
         double value = getCalculator().pop();
-        getCalculator().push(Math.sqrt(value));
+        double result = Math.sqrt(value);
+        getCalculator().push(result);
     }
 }

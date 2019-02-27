@@ -2,6 +2,7 @@ package org.elsys.postfix;
 
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.io.PrintStream;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -17,12 +18,27 @@ public class Calculator {
         operations = new HashMap<>();
     }
 
-    public void run(InputStream in, OutputStream out) {
+    public void run(InputStream in, PrintStream out) {
         Scanner scanner = new Scanner(in);
-        while (scanner.hasNext()) {
-
+        while (true) {
+            out.printf("(%d): ", stackSize());
+            String token = scanner.next();
+            try {
+                Double value = Double.valueOf(token);
+                push(value);
+            } catch (NumberFormatException e) {
+                execute(token);
+                out.printf("%f\n", lastValue());
+            }
         }
+    }
 
+    private int stackSize() {
+        return values.size();
+    }
+
+    private double lastValue() {
+        return values.peek();
     }
 
     public void push(double value) {
@@ -37,5 +53,9 @@ public class Calculator {
             );
         }
         operation.execute();
+    }
+
+    public void addOperation(Operation operation) {
+        operations.put(operation.getName(), operation);
     }
 }

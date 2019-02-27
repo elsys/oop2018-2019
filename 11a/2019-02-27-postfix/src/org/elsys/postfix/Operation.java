@@ -1,6 +1,8 @@
 package org.elsys.postfix;
 
-public abstract class Operation {
+public interface Operation {
 
-    public abstract void execute();
+    /*public abstract */void execute();
+
+    String getName();
 }

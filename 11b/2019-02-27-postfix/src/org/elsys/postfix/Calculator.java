@@ -24,11 +24,11 @@ public class Calculator {
         while (scanner.hasNext()) {
             String token = scanner.next();
             try {
-                Double value = Double.parseDouble(token);
+                Double value = Double.valueOf(token);
                 push(value);
             } catch (NumberFormatException e) {
                 execute(token);
-                out.printf("%d\n", lastValue());
+                out.printf("%f\n", lastValue());
             }
             out.printf("(%d): ", valuesCount());
         }
@@ -59,5 +59,9 @@ public class Calculator {
 
     public void push(double value) {
         values.push(value);
+    }
+
+    public double pop() {
+        return values.pop();
     }
 }

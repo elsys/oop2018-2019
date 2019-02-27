@@ -20,8 +20,8 @@ public class Calculator {
 
     public void run(InputStream in, PrintStream out) {
         Scanner scanner = new Scanner(in);
-        while (true) {
-            out.printf("(%d): ", stackSize());
+        out.printf("(%d): ", stackSize());
+        while (scanner.hasNext()) {
             String token = scanner.next();
             try {
                 Double value = Double.valueOf(token);
@@ -30,6 +30,7 @@ public class Calculator {
                 execute(token);
                 out.printf("%f\n", lastValue());
             }
+            out.printf("(%d): ", stackSize());
         }
     }
 
@@ -46,7 +47,7 @@ public class Calculator {
     }
 
     public void execute(String token) {
-        Operation operation = operations.get("token");
+        Operation operation = operations.get(token);
         if (operation == null) {
             throw new RuntimeException(
                     String.format("Operation %s not found", token)
@@ -57,5 +58,9 @@ public class Calculator {
 
     public void addOperation(Operation operation) {
         operations.put(operation.getName(), operation);
+    }
+
+    public double pop() {
+        return values.pop();
     }
 }

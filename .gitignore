@@ -4,3 +4,6 @@ draw
 postfix
 turtle
 *.class
+out/
+!*.java
+

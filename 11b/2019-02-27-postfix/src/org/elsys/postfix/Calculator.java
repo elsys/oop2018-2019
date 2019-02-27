@@ -1,14 +1,46 @@
 package org.elsys.postfix;
 
+import java.io.InputStream;
+import java.io.PrintStream;
+import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 import java.util.Stack;
 
 public class Calculator {
 
-    private Stack<Double> values;
+    private final Stack<Double> values;
 
-    private Map<String, Operation> operations;
+    private final Map<String, Operation> operations;
 
+    public Calculator() {
+        values = new Stack<>();
+        operations = new HashMap<>();
+    }
+
+    public void run(InputStream in, PrintStream out) {
+        Scanner scanner = new Scanner(in);
+        out.printf("(%d): ", valuesCount());
+        while (scanner.hasNext()) {
+            String token = scanner.next();
+            try {
+                Double value = Double.parseDouble(token);
+                push(value);
+            } catch (NumberFormatException e) {
+                execute(token);
+                out.printf("%d\n", lastValue());
+            }
+            out.printf("(%d): ", valuesCount());
+        }
+    }
+
+    private double lastValue() {
+        return values.peek();
+    }
+
+    private int valuesCount() {
+        return values.size();
+    }
 
     public void execute(String token) {
         if (operations.containsKey(token)) {
@@ -23,5 +55,9 @@ public class Calculator {
 
     public void addOperation(Operation operation) {
         operations.put(operation.getName(), operation);
+    }
+
+    public void push(double value) {
+        values.push(value);
     }
 }

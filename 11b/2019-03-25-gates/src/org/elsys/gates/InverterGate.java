@@ -14,6 +14,6 @@ public class InverterGate extends Gate {
 
     @Override
     public void act() {
-        output.setState(!input.getState());
+        output.setSignal(!input.getSignal());
     }
 }

@@ -21,15 +21,15 @@ public class InverterGateTest {
 
     @Test
     public void testInTrue(){
-        input.setState(true);
+        input.setSignal(true);
 
-        assertFalse(out.getState());
+        assertFalse(out.getSignal());
     }
 
     @Test
     public void testInFalse(){
-        input.setState(false);
+        input.setSignal(false);
 
-        assertTrue(out.getState());
+        assertTrue(out.getSignal());
     }
 }

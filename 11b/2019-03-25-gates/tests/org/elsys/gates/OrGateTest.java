@@ -23,17 +23,17 @@ public class OrGateTest {
 
     @Test
     public void testIn1TrueIn2False(){
-        in1.setState(true);
-        in2.setState(false);
+        in1.setSignal(true);
+        in2.setSignal(false);
 
-        assertTrue(out.getState());
+        assertTrue(out.getSignal());
     }
 
     @Test
     public void testIn1FalseIn2False(){
-        in1.setState(false);
-        in2.setState(false);
+        in1.setSignal(false);
+        in2.setSignal(false);
 
-        assertFalse(out.getState());
+        assertFalse(out.getSignal());
     }
 }

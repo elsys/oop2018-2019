@@ -6,17 +6,24 @@ import java.util.List;
 public class Wire {
     private boolean state;
     List<Gate> gates;
+    String name;
 
     public Wire() {
         state = false;
         gates = new ArrayList<Gate>();
     }
 
-    public boolean getState() {
+    public Wire(String name){
+        this.name = name;
+        state = false;
+        gates = new ArrayList<Gate>();
+    }
+
+    public boolean getSignal() {
         return state;
     }
 
-    public void setState(boolean state) {
+    public void setSignal(boolean state) {
         this.state = state;
         for(Gate gate:gates){
             gate.act();
@@ -28,4 +35,5 @@ public class Wire {
             gates.add(gate);
         }
     }
+
 }

@@ -23,17 +23,17 @@ public class AndGateTest {
 
     @Test
     public void testIn1TrueIn2False(){
-        in1.setState(true);
-        in2.setState(false);
+        in1.setSignal(true);
+        in2.setSignal(false);
 
-        assertFalse(out.getState());
+        assertFalse(out.getSignal());
     }
 
     @Test
     public void testIn1TrueIn2True(){
-        in1.setState(true);
-        in2.setState(true);
+        in1.setSignal(true);
+        in2.setSignal(true);
 
-        assertTrue(out.getState());
+        assertTrue(out.getSignal());
     }
 }

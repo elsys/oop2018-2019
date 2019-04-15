@@ -23,17 +23,17 @@ public class XorGateTest {
 
     @Test
     public void testIn1TrueIn2False(){
-        in1.setState(true);
-        in2.setState(false);
+        in1.setSignal(true);
+        in2.setSignal(false);
 
-        assertTrue(out.getState());
+        assertTrue(out.getSignal());
     }
 
     @Test
     public void testIn1TrueIn2True(){
-        in1.setState(true);
-        in2.setState(true);
+        in1.setSignal(true);
+        in2.setSignal(true);
 
-        assertFalse(out.getState());
+        assertFalse(out.getSignal());
     }
 }

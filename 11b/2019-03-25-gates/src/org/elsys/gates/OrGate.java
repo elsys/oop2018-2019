@@ -7,9 +7,9 @@ public class OrGate extends BinaryGate {
 
     @Override
     public void act() {
-        getOut().setState(
-                getInput1().getState()
-                || getInput2().getState()
+        getOut().setSignal(
+                getInput1().getSignal()
+                || getInput2().getSignal()
         );
     }
 }

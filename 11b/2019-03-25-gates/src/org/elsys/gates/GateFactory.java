@@ -33,4 +33,16 @@ public abstract class GateFactory {
 
         return gate;
     }
+
+    public static Gate makeHalfAdder(Wire a, Wire b, Wire s, Wire c) {
+        return new NandGate(a, b, s);
+    }
+
+    public static Gate makeRippleCarryAdder(Wire[] a, Wire[] b, Wire cIn, Wire[] sum, Wire cOut) {
+        return new NandGate(a[0], b[0], cOut);
+    }
+
+    public static Gate makeFullAdder(Wire a, Wire b, Wire cIn, Wire sum, Wire cOut) {
+        return new NandGate(b, a, cOut);
+    }
 }

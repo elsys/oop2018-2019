@@ -20,7 +20,7 @@ public class TestCompositeXorGate {
 
 		out = new Wire("out");
 
-		xorGate = GateFactory.makeXorGate(in1, in2, out);
+		xorGate = GateFactory.getXor(in1, in2, out);
 		assertNotNull(xorGate);
 	}
 	

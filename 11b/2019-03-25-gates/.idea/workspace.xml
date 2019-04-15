@@ -6,14 +6,8 @@
       <change beforePath="$PROJECT_DIR$/../../11a/2019-03-25-gates/src/org/elsys/gates/GateFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../11a/2019-03-25-gates/src/org/elsys/gates/GateFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../11a/2019-03-25-gates/tests/org/elsys/gates/TestCompositeXorGate.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../11a/2019-03-25-gates/tests/org/elsys/gates/TestCompositeXorGate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../11a/2019-03-25-gates/tests/org/elsys/gates/TestNandOrGate.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../11a/2019-03-25-gates/tests/org/elsys/gates/TestNandOrGate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/elsys/gates/AndGate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/elsys/gates/AndGate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/elsys/gates/InverterGate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/elsys/gates/InverterGate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/elsys/gates/OrGate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/elsys/gates/OrGate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/elsys/gates/Wire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/elsys/gates/Wire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/org/elsys/gates/AndGateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/elsys/gates/AndGateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/org/elsys/gates/InverterGateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/elsys/gates/InverterGateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/org/elsys/gates/OrGateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/elsys/gates/OrGateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/org/elsys/gates/XorGateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/elsys/gates/XorGateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/elsys/gates/GateFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/elsys/gates/GateFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/elsys/gates/TestCompositeXorGate.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/elsys/gates/TestCompositeXorGate.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,113 +19,105 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/elsys/gates/GateFactory.java">
+        <entry file="file://$PROJECT_DIR$/tests/org/elsys/gates/TestCompositeXorGate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="729">
-              <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/org/elsys/gates/OrGateTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="84">
+              <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/org/elsys/gates/TestCompositeXorGate.java">
+        <entry file="file://$PROJECT_DIR$/src/org/elsys/gates/NandFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/org/elsys/gates/InverterGateTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+            <state relative-caret-position="138">
+              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#255#256#0" expanded="true" />
+                <element signature="e#304#305#0" expanded="true" />
+                <element signature="e#373#374#0" expanded="true" />
+                <element signature="e#423#424#0" expanded="true" />
+                <element signature="e#491#492#0" expanded="true" />
+                <element signature="e#541#542#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/elsys/gates/Gate.java">
+        <entry file="file://$PROJECT_DIR$/tests/org/elsys/gates/TestFullAdder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+            <state relative-caret-position="93">
+              <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/org/elsys/gates/TestNandAndGate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="93">
+              <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/org/elsys/gates/TestNandOrGate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/org/elsys/gates/TestNandNotGate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/org/elsys/gates/TestRippleAdder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/org/elsys/gates/TestHalfAdder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/elsys/gates/GateFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#973#974#0" expanded="true" />
+                <element signature="e#1005#1006#0" expanded="true" />
+                <element signature="e#1257#1258#0" expanded="true" />
+                <element signature="e#1304#1305#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/elsys/gates/AndGate.java">
+        <entry file="file://$PROJECT_DIR$/tests/org/elsys/gates/TestNandXorGate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-              <folding>
-                <element signature="e#119#120#0" expanded="true" />
-                <element signature="e#155#156#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/org/elsys/gates/TestAndGate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/elsys/gates/Wire.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/org/elsys/gates/XorGateTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/org/elsys/gates/AndGateTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="891">
-              <caret line="37" column="5" selection-start-line="9" selection-start-column="3" selection-end-line="37" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="93">
+              <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -160,12 +146,16 @@
         <option value="$PROJECT_DIR$/src/org/elsys/gates/OrGate.java" />
         <option value="$PROJECT_DIR$/src/org/elsys/gates/InverterGate.java" />
         <option value="$PROJECT_DIR$/src/org/elsys/gates/CompositeGate.java" />
-        <option value="$PROJECT_DIR$/src/org/elsys/gates/GateFactory.java" />
         <option value="$PROJECT_DIR$/tests/org/elsys/gates/XorGateTest.java" />
         <option value="$PROJECT_DIR$/tests/org/elsys/gates/OrGateTest.java" />
         <option value="$PROJECT_DIR$/tests/org/elsys/gates/InverterGateTest.java" />
         <option value="$PROJECT_DIR$/src/org/elsys/gates/AndGate.java" />
         <option value="$PROJECT_DIR$/src/org/elsys/gates/Wire.java" />
+        <option value="$PROJECT_DIR$/src/org/elsys/gates/XorGate.java" />
+        <option value="$PROJECT_DIR$/src/org/elsys/gates/NandGate.java" />
+        <option value="$PROJECT_DIR$/tests/org/elsys/gates/TestCompositeXorGate.java" />
+        <option value="$PROJECT_DIR$/src/org/elsys/gates/GateFactory.java" />
+        <option value="$PROJECT_DIR$/src/org/elsys/gates/NandFactory.java" />
       </list>
     </option>
   </component>
@@ -225,7 +215,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555328309976" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555329171670" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -248,39 +238,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.OrGateTest">
-    <configuration name="AndGateTest.testIn1TrueIn2False" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="2019-03-25" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.elsys.gates.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.elsys.gates" />
-      <option name="MAIN_CLASS_NAME" value="org.elsys.gates.AndGateTest" />
-      <option name="METHOD_NAME" value="testIn1TrueIn2False" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AndGateTest.testIn1TrueIn2True" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="2019-03-25" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.elsys.gates.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.elsys.gates" />
-      <option name="MAIN_CLASS_NAME" value="org.elsys.gates.AndGateTest" />
-      <option name="METHOD_NAME" value="testIn1TrueIn2True" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestXorGate">
     <configuration name="InverterGateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="2019-03-25" />
       <extension name="coverage">
@@ -311,7 +269,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XorGateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestNandGate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="2019-03-25" />
       <extension name="coverage">
         <pattern>
@@ -320,7 +278,37 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.elsys.gates" />
-      <option name="MAIN_CLASS_NAME" value="org.elsys.gates.XorGateTest" />
+      <option name="MAIN_CLASS_NAME" value="org.elsys.gates.TestNandGate" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestNandNotGate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="2019-03-25" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.elsys.gates.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.elsys.gates" />
+      <option name="MAIN_CLASS_NAME" value="org.elsys.gates.TestNandNotGate" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestXorGate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="2019-03-25" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.elsys.gates.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.elsys.gates" />
+      <option name="MAIN_CLASS_NAME" value="org.elsys.gates.TestXorGate" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -328,11 +316,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestXorGate" />
+        <item itemvalue="JUnit.TestNandGate" />
+        <item itemvalue="JUnit.TestNandNotGate" />
         <item itemvalue="JUnit.OrGateTest" />
         <item itemvalue="JUnit.InverterGateTest" />
-        <item itemvalue="JUnit.XorGateTest" />
-        <item itemvalue="JUnit.AndGateTest.testIn1TrueIn2True" />
-        <item itemvalue="JUnit.AndGateTest.testIn1TrueIn2False" />
       </list>
     </recent_temporary>
   </component>
@@ -391,7 +379,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.49674267" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.49674267" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -450,13 +438,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/elsys/gates/GateFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="729">
-          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/org/elsys/gates/InverterGateTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -497,17 +478,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/elsys/gates/AndGate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-          <folding>
-            <element signature="e#119#120#0" expanded="true" />
-            <element signature="e#155#156#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/elsys/gates/Wire.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
@@ -535,10 +505,120 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/elsys/gates/AndGate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <element signature="e#119#120#0" expanded="true" />
+            <element signature="e#155#156#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/elsys/gates/XorGate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding>
+            <element signature="e#119#120#0" expanded="true" />
+            <element signature="e#155#156#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/elsys/gates/NandGate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+          <folding>
+            <element signature="e#120#121#0" expanded="true" />
+            <element signature="e#156#157#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/org/elsys/gates/TestCompositeXorGate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        <state relative-caret-position="84">
+          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/org/elsys/gates/TestHalfAdder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/org/elsys/gates/TestNandNotGate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/org/elsys/gates/TestRippleAdder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/org/elsys/gates/TestNandOrGate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/org/elsys/gates/TestNandAndGate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/org/elsys/gates/TestFullAdder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/elsys/gates/GateFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
+          <folding>
+            <element signature="e#973#974#0" expanded="true" />
+            <element signature="e#1005#1006#0" expanded="true" />
+            <element signature="e#1257#1258#0" expanded="true" />
+            <element signature="e#1304#1305#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/org/elsys/gates/TestNandXorGate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/elsys/gates/NandFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="e#255#256#0" expanded="true" />
+            <element signature="e#304#305#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#491#492#0" expanded="true" />
+            <element signature="e#541#542#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

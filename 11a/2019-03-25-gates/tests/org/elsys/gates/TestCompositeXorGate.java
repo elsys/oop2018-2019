@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-public class TestXorGate {
+public class TestCompositeXorGate {
 
 	private Wire in1;
 	private Wire in2;
@@ -20,33 +20,33 @@ public class TestXorGate {
 
 		out = new Wire("out");
 
-		xorGate = new XorGate(in1, in2, out);
+		xorGate = GateFactory.makeXorGate(in1, in2, out);
 		assertNotNull(xorGate);
 	}
-
+	
+	
 	@Test
-	public void testIn1FalseIn2False() {
-		assertFalse(in1.getSignal());
-		assertFalse(in2.getSignal());
+	public void test() {
 		assertFalse(out.getSignal());
 	}
 
 	@Test
-	public void testIn1TrueIn2False() {
+	public void testTrue1() {
 		in1.setSignal(true);
 		assertTrue(out.getSignal());
 	}
 
 	@Test
-	public void testIn1FalseIn2True() {
+	public void testTrue2() {
 		in2.setSignal(true);
 		assertTrue(out.getSignal());
 	}
 
 	@Test
-	public void testIn1TrueIn2True() {
+	public void testAllTrue() {
 		in1.setSignal(true);
 		in2.setSignal(true);
 		assertFalse(out.getSignal());
 	}
+	
 }

@@ -5,13 +5,13 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-public class TestXorGate {
+public class TestNandGate {
 
 	private Wire in1;
 	private Wire in2;
 	private Wire out;
 
-	private Gate xorGate;
+	private Gate nandGate;
 
 	@Before
 	public void beforeEach() {
@@ -20,33 +20,37 @@ public class TestXorGate {
 
 		out = new Wire("out");
 
-		xorGate = new XorGate(in1, in2, out);
-		assertNotNull(xorGate);
+		nandGate = new NandGate(in1, in2, out);
+		assertNotNull(nandGate);
+		
+		in1.setSignal(true);
+		in1.setSignal(false);
 	}
 
 	@Test
 	public void testIn1FalseIn2False() {
 		assertFalse(in1.getSignal());
 		assertFalse(in2.getSignal());
-		assertFalse(out.getSignal());
+		assertTrue(out.getSignal());
 	}
 
 	@Test
-	public void testIn1TrueIn2False() {
+	public void outIn1TrueIn2False() {
 		in1.setSignal(true);
 		assertTrue(out.getSignal());
 	}
 
 	@Test
-	public void testIn1FalseIn2True() {
+	public void outIn1FalseIn2True() {
 		in2.setSignal(true);
 		assertTrue(out.getSignal());
 	}
 
 	@Test
-	public void testIn1TrueIn2True() {
+	public void outIn1TrueIn2True() throws InterruptedException {
 		in1.setSignal(true);
 		in2.setSignal(true);
 		assertFalse(out.getSignal());
 	}
+
 }

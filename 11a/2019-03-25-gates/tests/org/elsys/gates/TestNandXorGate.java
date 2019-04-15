@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-public class TestXorGate {
+public class TestNandXorGate {
 
 	private Wire in1;
 	private Wire in2;
@@ -20,7 +20,7 @@ public class TestXorGate {
 
 		out = new Wire("out");
 
-		xorGate = new XorGate(in1, in2, out);
+		xorGate = NandFactory.makeXorGate(in1, in2, out);
 		assertNotNull(xorGate);
 	}
 

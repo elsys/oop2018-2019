@@ -5,13 +5,13 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-public class TestXorGate {
+public class TestNandAndGate {
 
 	private Wire in1;
 	private Wire in2;
 	private Wire out;
 
-	private Gate xorGate;
+	private Gate andGate;
 
 	@Before
 	public void beforeEach() {
@@ -20,8 +20,8 @@ public class TestXorGate {
 
 		out = new Wire("out");
 
-		xorGate = new XorGate(in1, in2, out);
-		assertNotNull(xorGate);
+		andGate = NandFactory.makeAndGate(in1, in2, out);
+		assertNotNull(andGate);
 	}
 
 	@Test
@@ -32,21 +32,22 @@ public class TestXorGate {
 	}
 
 	@Test
-	public void testIn1TrueIn2False() {
+	public void outIn1TrueIn2False() {
 		in1.setSignal(true);
-		assertTrue(out.getSignal());
+		assertFalse(out.getSignal());
 	}
 
 	@Test
-	public void testIn1FalseIn2True() {
-		in2.setSignal(true);
-		assertTrue(out.getSignal());
-	}
-
-	@Test
-	public void testIn1TrueIn2True() {
-		in1.setSignal(true);
+	public void outIn1FalseIn2True() {
 		in2.setSignal(true);
 		assertFalse(out.getSignal());
 	}
+
+	@Test
+	public void outIn1TrueIn2True() {
+		in1.setSignal(true);
+		in2.setSignal(true);
+		assertTrue(out.getSignal());
+	}
+
 }

@@ -7,6 +7,7 @@ public class Wire {
 
 	private boolean state;
 	private List<Gate> gates = new ArrayList<Gate>();
+	private String name;
 
 	public void setSignal(boolean state) {
 		if (state != this.state) {
@@ -27,4 +28,6 @@ public class Wire {
 			// gate.act();
 		}
 	}
+	public Wire(){}
+	public Wire(String name){ this.name = name;}
 }

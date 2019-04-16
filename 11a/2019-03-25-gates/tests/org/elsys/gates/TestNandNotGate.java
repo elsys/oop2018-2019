@@ -14,8 +14,8 @@ public class TestNandNotGate {
 
 	@Before
 	public void beforeEach() {
-		in = new Wire("in");
-		out = new Wire("out");
+		in = new Wire();
+		out = new Wire();
 
 		gate = NandFactory.makeNotGate(in, out);
 		assertNotNull(gate);

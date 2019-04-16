@@ -16,11 +16,11 @@ public class TestHalfAdder {
 
 	@Before
 	public void beforeEach() {
-		a = new Wire("A");
-		b = new Wire("B");
+		a = new Wire();
+		b = new Wire();
 
-		s = new Wire("sum");
-		c = new Wire("carry");
+		s = new Wire();
+		c = new Wire();
 
 		halfAdder = GateFactory.makeHalfAdder(a, b, s, c);
 		assertNotNull(halfAdder);

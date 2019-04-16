@@ -5,6 +5,9 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
+import javax.swing.plaf.synth.SynthTextAreaUI;
+import java.sql.SQLOutput;
+
 public class TestNandOrGate {
 
 	private Wire in1;
@@ -15,17 +18,17 @@ public class TestNandOrGate {
 
 	@Before
 	public void beforeEach() {
-		in1 = new Wire("in1");
-		in2 = new Wire("in2");
+		in1 = new Wire();
+		in2 = new Wire();
 
-		out = new Wire("out");
-
+		out = new Wire();
 		orGate = NandFactory.makeOrGate(in1, in2, out);
 		assertNotNull(orGate);
 	}
 
 	@Test
 	public void testIn1FalseIn2False() {
+		System.out.println(in1.getSignal());
 		assertFalse(in1.getSignal());
 		assertFalse(in2.getSignal());
 		assertFalse(out.getSignal());
@@ -49,5 +52,4 @@ public class TestNandOrGate {
 		in2.setSignal(true);
 		assertTrue(out.getSignal());
 	}
-
 }

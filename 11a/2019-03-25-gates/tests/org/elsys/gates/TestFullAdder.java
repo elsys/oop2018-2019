@@ -19,12 +19,12 @@ public class TestFullAdder {
 
 	@Before
 	public void beforeEach() {
-		a = new Wire("A");
-		b = new Wire("B");
-		cIn = new Wire("Cin");
+		a = new Wire();
+		b = new Wire();
+		cIn = new Wire();
 		
-		sum = new Wire("Sum");
-		cOut = new Wire("Cout");
+		sum = new Wire();
+		cOut = new Wire();
 
 		fullAdder = GateFactory.makeFullAdder(a, b, cIn, sum, cOut);
 		assertNotNull(fullAdder);

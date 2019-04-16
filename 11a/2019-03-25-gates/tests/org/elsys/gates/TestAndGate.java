@@ -15,10 +15,10 @@ public class TestAndGate {
 
 	@Before
 	public void beforeEach() {
-		in1 = new Wire("in1");
-		in2 = new Wire("in2");
+		in1 = new Wire();
+		in2 = new Wire();
 
-		out = new Wire("out");
+		out = new Wire();
 
 		andGate = new AndGate(in1, in2, out);
 		assertNotNull(andGate);

@@ -6,12 +6,14 @@ public abstract class BinaryGate extends AbstractGate {
 	private Wire out;
 
 	public BinaryGate(Wire in1, Wire in2, Wire out) {
-		addInput(in1);
-		addInput(in2);
-		addOutput(out);
+
 		this.in1 = in1;
 		this.in2 = in2;
 		this.out = out;
+
+		addInput(in1);
+		addInput(in2);
+		addOutput(out);
 	}
 
 	protected Wire getIn1() {
@@ -26,6 +28,5 @@ public abstract class BinaryGate extends AbstractGate {
 		return out;
 	}
 
-	@Override
 	public abstract void act();
 }

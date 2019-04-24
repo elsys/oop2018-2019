@@ -34,7 +34,7 @@ public class KidsTest {
 		Map<String, Integer> ageByName = getKidsAgeByName(collection);
 		assertTrue(ageByName.keySet().containsAll(asList("Sara", "Anna")));
 		assertEquals(Integer.valueOf(4), ageByName.get("Sara"));
-		assertEquals(Integer.valueOf(4), ageByName.get("Anna"));
+		assertEquals(Integer.valueOf(5), ageByName.get("Anna"));
 	}
 
 }

@@ -7,7 +7,6 @@
       <change beforePath="$PROJECT_DIR$/../../11b/2019-04-17-lambdas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../11b/2019-04-17-lambdas/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../homeworks/02-card-game-sequel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../homeworks/02-card-game-sequel/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../04-postfix-calculator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-postfix-calculator/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/elsys/streams/practice/Kids.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/elsys/streams/practice/Kids.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/org/elsys/streams/practice/KidsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/org/elsys/streams/practice/KidsTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -37,9 +36,31 @@
         <entry file="file://$PROJECT_DIR$/test/org/elsys/streams/practice/KidsTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="337">
-              <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+              <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/org/elsys/streams/practice/OldestPersonTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/elsys/streams/practice/OldestPerson.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="40" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="40" />
+              <folding>
+                <element signature="e#152#153#0" expanded="true" />
+                <element signature="e#179#180#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -115,7 +136,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556107791439" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556108087496" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -221,10 +242,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/org/elsys/streams/practice/OldestPersonTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/elsys/streams/practice/OldestPerson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="40" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="40" />
+          <folding>
+            <element signature="e#152#153#0" expanded="true" />
+            <element signature="e#179#180#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/org/elsys/streams/practice/KidsTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="337">
-          <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+          <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

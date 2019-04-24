@@ -10,7 +10,7 @@ public class Kids {
         return null;
     }
 
-    public static Map<String, String> getKidsAgeByName(List<Person> people) {
+    public static Map<String, Integer> getKidsAgeByName(List<Person> people) {
         return null;
     }
 

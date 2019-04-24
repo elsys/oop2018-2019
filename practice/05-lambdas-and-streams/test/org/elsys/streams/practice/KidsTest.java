@@ -2,9 +2,7 @@ package org.elsys.streams.practice;
 
 import static java.util.Arrays.asList;
 import static org.elsys.streams.practice.Kids.*;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 import java.util.List;
 import java.util.Map;
@@ -33,10 +31,10 @@ public class KidsTest {
 		Person eva = new Person("Eva", 42);
 		Person anna = new Person("Anna", 5);
 		List<Person> collection = asList(sara, eva, viktor, anna);
-		Map<String, String> ageByName = getKidsAgeByName(collection);
+		Map<String, Integer> ageByName = getKidsAgeByName(collection);
 		assertTrue(ageByName.keySet().containsAll(asList("Sara", "Anna")));
-		assertEquals(4, ageByName.get("Sara"));
-		assertEquals(5, ageByName.get("Anna"));
+		assertEquals(Integer.valueOf(4), ageByName.get("Sara"));
+		assertEquals(Integer.valueOf(4), ageByName.get("Anna"));
 	}
 
 }

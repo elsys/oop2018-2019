@@ -1,5 +1,6 @@
 package org.elsys.tuesky.impl.trips;
 
+import org.elsys.tuesky.api.TUESkyException;
 import org.elsys.tuesky.api.trips.Trip;
 import org.elsys.tuesky.impl.Factory;
 import org.junit.jupiter.api.Assertions;
@@ -57,7 +58,7 @@ public class TripTest {
     @Test
     public void testNotMatchingTwoFlightTrip() {
         Assertions.assertThrows(
-                RuntimeException.class,
+                TUESkyException.class,
                 () -> Factory.startTrip()
                              .then(Factory.createFlight("Sofia", "Athens", Duration.ofHours(1)))
                              .then(Factory.createLayover(Duration.ofMinutes(90)))

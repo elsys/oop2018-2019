@@ -10,5 +10,5 @@ public interface TripQuery {
 
     TripQuery or(TripQuery query);
 
-    TripQuery not(TripQuery query);
+    TripQuery not();
 }

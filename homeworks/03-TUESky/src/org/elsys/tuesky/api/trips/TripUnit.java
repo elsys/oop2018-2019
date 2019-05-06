@@ -6,7 +6,4 @@ public interface TripUnit {
 
     Duration getDuration();
 
-    TripUnit getNext();
-
-    TripUnit getPrev();
 }

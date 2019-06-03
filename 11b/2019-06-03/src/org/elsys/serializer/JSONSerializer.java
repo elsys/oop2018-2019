@@ -13,8 +13,20 @@ public class JSONSerializer
         List<String> outputs = new ArrayList<>();
 
         for(Field field: fields){
-            String fieldName = field.getName();
             StringBuilder builder = new StringBuilder();
+
+            Ignore[] ignores = field.getDeclaredAnnotationsByType(Ignore.class);
+            if (ignores.length > 0){
+                continue;
+            }
+
+            String fieldName = field.getName();
+
+            MapAs[] maps = field.getDeclaredAnnotationsByType(MapAs.class);
+            if (maps.length > 0){
+                MapAs map = maps[0];
+                fieldName = map.value();
+            }
 
             builder.append('"');
             builder.append(fieldName);
@@ -28,18 +40,18 @@ public class JSONSerializer
                 if (isDirectlySerializable(value)){
                     builder.append('"' + value.toString() + '"');
                 } else if (isCollection(value)){
+                    String result = serializeCollection((Collection)value);
+                    builder.append(result);
+                } else if (isArray(value)){
 
                 } else {
                     builder.append(serialize(value));
                 }
-
             } catch (IllegalAccessException e) {
                 e.printStackTrace();
             }
 
-
             outputs.add(builder.toString());
-
         }
 
         StringBuilder builder = new StringBuilder();

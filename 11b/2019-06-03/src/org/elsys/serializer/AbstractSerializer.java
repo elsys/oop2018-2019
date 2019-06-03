@@ -1,5 +1,6 @@
 package org.elsys.serializer;
 
+import java.lang.reflect.Array;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -28,4 +29,20 @@ public abstract class AbstractSerializer implements Serializer {
     protected boolean isCollection(Object obj){
         return obj instanceof Collection;
     }
+
+    protected boolean isArray(Object obj){
+        return obj.getClass().isArray();
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+

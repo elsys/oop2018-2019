@@ -1,10 +1,18 @@
 package org.elsys.serializer.main;
 
+import org.elsys.serializer.Ignore;
+import org.elsys.serializer.MapAs;
+
 import java.util.List;
 
 public class Student {
+
+    @MapAs("parvo-ime")
     private String firstName;
+
+    @Ignore
     private String fathersName;
+
     private String lastName;
 
     private List<Integer> grades;
